@@ -1,13 +1,16 @@
 import React from "react";
-
+import "./topbar.css";
 const Topbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="javascript:">
+        <a className="navbar-brand pt-2" href="javascript:">
           <i className="fa fa-bars px-2" aria-hidden="true"></i>
-          <i class="fa fa-youtube-play pl-4 px-1" aria-hidden="true"></i>
-          Youtube
+          <i
+            className="fa fa-youtube-play pl-4 pr-2 pt-1 youtube-button"
+            aria-hidden="true"
+          ></i>
+          YouTube
         </a>
         <button
           className="navbar-toggler"
@@ -22,7 +25,7 @@ const Topbar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav mx-auto">
             <li className="nav-item active">
               <form class="form-inline my-2 my-lg-0">
                 <input
