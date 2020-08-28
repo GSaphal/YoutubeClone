@@ -1,15 +1,15 @@
 .sidebar {
-  height: 90vh;
-  width: 280px;
-  background-color: white;
-  border-right: 1px solid #d5d5d5;
-  overflow-y: scroll;
-}
-.sidebar ul {
-  list-style: none;
-  margin-left: -40px;
-}
-.sidebar ul li {
-  padding: 10px;
-  font-size: 18px;
-}
+    height: 90vh;
+    width: 280px;
+    background-color: white;
+    border-right: 1px solid #d5d5d5;
+    overflow-y: scroll;
+  }
+  .sidebar ul {
+    list-style: none;
+    margin-left: -40px;
+  }
+  .sidebar ul li {
+    padding: 10px;
+    font-size: 18px;
+  }

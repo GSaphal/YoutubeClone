@@ -27,30 +27,31 @@ const Topbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item active">
-              <form class="form-inline my-2 my-lg-0">
+              <form class="form-inline my-4 my-lg-0">
                 <input
-                  class="form-control mr-sm-2"
+                  class="form-control"
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
                 />
+                <button type="submit"><i class="fa fa-search"></i></button>
               </form>
             </li>
           </ul>
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav ml-auto font-right">
             <li className="nav-item active">
               <a className="nav-link" href="javascript:">
-                <i className="fa fa-video-camera" aria-hidden="true"></i>
+                <i className="fa fa-video-camera px-2" aria-hidden="true"></i>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="javascript:">
-                <i className="fa fa-th" aria-hidden="true"></i>
+                <i className="fa fa-th px-2" aria-hidden="true"></i>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="javascript:">
-                <i class="fa fa-bell " aria-hidden="true"></i>
+                <i class="fa fa-bell px-2 " aria-hidden="true"></i>
               </a>
             </li>
           </ul>

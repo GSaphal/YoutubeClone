@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./sidebar.css";
+import { Link } from "react-router-dom";
 class Sidebar extends Component {
   constructor(props) {
     super(props);
@@ -13,14 +14,8 @@ class Sidebar extends Component {
         "Aneesha Khadka",
         "Saphal Ghimire",
         "Sisan Baniya",
-        "Wah Banana",
-        "Chetan Vlogs",
-        "Aneesha Khadka",
-        "Saphal Ghimire",
-        "Sisan Baniya",
-        "Wah Banana",
-        "Chetan Vlogs",
       ],
+      part: ["Library", "History", "Watch Later", "Liked Vidoes"],
     };
   }
   render() {
@@ -28,14 +23,29 @@ class Sidebar extends Component {
       <div className="sidebar">
         <ul>
           <li>
-            <i className="fa fa-home px-3" aria-hidden="true"></i> Home
+            <Link to="/">
+              <i className="fa fa-home px-3" aria-hidden="true"></i> Home
+            </Link>
           </li>
           <li>
-            <i className="fa fa-home px-3" aria-hidden="true"></i> Trending
+            <Link to="/feed/trending">
+              <i className="fa fa-home px-3" aria-hidden="true"></i> Trending{" "}
+            </Link>
           </li>
           <li>
-            <i className="fa fa-home px-3" aria-hidden="true"></i> Subscription
+            <Link to="/feed/subscription">
+              <i className="fa fa-home px-3" aria-hidden="true"></i>{" "}
+              Subscription
+            </Link>
           </li>
+          <hr />
+          {this.state.part.map((data) => {
+            return (
+              <li>
+                <i className="fa fa-home px-3" aria-hidden="true"></i> {data}
+              </li>
+            );
+          })}
           <hr />
           <li className="mx-2 text-uppercase">Subscription</li>
           {this.state.channel.map((item) => {
