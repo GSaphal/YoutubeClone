@@ -22,3 +22,6 @@
   background: white !important;
   height: 70px;
 }
+.navbar {
+  position: relative;
+}

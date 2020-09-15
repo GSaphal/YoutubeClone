@@ -16,13 +16,13 @@ export default class App extends Component {
     });
   };
   render() {
-    const margin = this.state.isReponsive ? 120 : 300;
     return (
       <Fragment>
         <Navbar isOpen={this.isOpen} isReponsive={this.state.isReponsive} />
         <div className="content">
-          {this.state.isReponsive ? <SidebarResponsive /> : <Sidebar />}
-          <div className="pages" style={{ marginLeft: margin }}>
+          <SidebarResponsive />
+          {this.state.isReponsive ? <Sidebar isOpen={this.isOpen} /> : ""}
+          <div className="pages">
             <Pages />
           </div>
         </div>

@@ -1,11 +1,21 @@
+.sidebar-wrapper {
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .sidebar {
   height: 100%;
   width: 280px;
   background-color: white;
-  z-index: 1;
+  z-index: 3;
   border-right: 1px solid #d5d5d5;
   overflow-y: scroll;
-  position: fixed;
+  position: absolute;
+  top: 0px;
   overflow-x: hidden;
 }
 .sidebar ul {
